@@ -17,17 +17,22 @@ This project focuses on a first version of the checkout and order-tracking exper
 - `requirements-traceability.csv` — links business requirements to stories and tests
 - `uat-test-cases.csv` — sample user acceptance test scenarios
 - `uat-execution-log.csv` — blank template for recording actual UAT results
+- `checkout_rules.py` — small Python simulation of checkout rules
+- `test_checkout_rules.py` — automated unit tests for the checkout simulation
 - `validate_case_study.py` — checks that document references are consistent
 
-## Check the project files
+## Run the checks
 
-Run this from the project folder:
+Run these commands from the project folder:
 
 ```bash
 python validate_case_study.py
+python -m unittest -v
 ```
 
-The script checks that the key files exist, IDs are unique, and requirements, stories and test cases are linked consistently. It does not run an e-commerce application or perform UAT.
+The validation script checks that the key files exist, IDs are unique, and requirements, stories and test cases are linked consistently.
+
+The automated unit tests check the Python checkout simulation, including cart operations, delivery validation, order totals, payment outcomes and order status. The tests use simulated data and do not connect to a live store or payment gateway.
 
 ## Main workflow
 
@@ -42,4 +47,4 @@ A customer reviews the cart, enters delivery details, checks the final total, ch
 
 ## Project status
 
-Documentation and traceability are prepared as a portfolio exercise. The validation script checks document consistency. UAT has not been executed, and the proposed requirements have not been reviewed by real business stakeholders.
+Documentation and traceability are prepared as a portfolio exercise. The validation script checks document consistency. The checkout simulation's automated tests have passed (13 tests). UAT has not been executed, and the proposed requirements have not been reviewed by real business stakeholders.
