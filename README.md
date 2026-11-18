@@ -12,12 +12,26 @@ This project focuses on a first version of the checkout and order-tracking exper
 
 - `business-requirements.md` — problem statement, scope and business requirements
 - `user-stories.md` — user stories with acceptance criteria
-- `process-flow.md` — proposed order process
+- `process-flow.md` — proposed checkout process
+- `stakeholder-register.md` — stakeholder roles and involvement
+- `requirements-traceability.csv` — links business requirements to stories and tests
 - `uat-test-cases.csv` — sample user acceptance test scenarios
+- `uat-execution-log.csv` — blank template for recording actual UAT results
+- `validate_case_study.py` — checks that document references are consistent
+
+## Check the project files
+
+Run this from the project folder:
+
+```bash
+python validate_case_study.py
+```
+
+The script checks that the key files exist, IDs are unique, and requirements, stories and test cases are linked consistently. It does not run an e-commerce application or perform UAT.
 
 ## Main workflow
 
-A customer browses products, adds an item to the cart, enters delivery details, chooses a payment method and places an order. The system confirms the order and shows its status.
+A customer reviews the cart, enters delivery details, checks the final total, chooses a payment method and places an order. The system confirms the order after successful payment and displays its status.
 
 ## Assumptions
 
@@ -28,4 +42,4 @@ A customer browses products, adds an item to the cart, enters delivery details, 
 
 ## Project status
 
-Portfolio practice project. Requirements and test cases are proposed examples and have not been validated with actual business users.
+Documentation and traceability are prepared as a portfolio exercise. The validation script checks document consistency. UAT has not been executed, and the proposed requirements have not been reviewed by real business stakeholders.
