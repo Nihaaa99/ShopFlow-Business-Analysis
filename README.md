@@ -47,4 +47,4 @@ A customer reviews the cart, enters delivery details, checks the final total, ch
 
 ## Project status
 
-Documentation and traceability are prepared as a portfolio exercise. The validation script checks document consistency. The checkout simulation's automated tests have passed (13 tests). UAT has not been executed, and the proposed requirements have not been reviewed by real business stakeholders.
+I ran the checkout simulation's 13 automated tests, and all 13 passed. The documentation validation script also passed all 7 checks, covering the required files and links between requirements, user stories and test cases. Formal UAT has not been carried out, and the proposed requirements have not been reviewed by real business stakeholders.
