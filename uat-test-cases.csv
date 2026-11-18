@@ -1,0 +1,14 @@
+test_case_id,related_story,scenario,preconditions,test_steps,expected_result,priority
+TC-01,US-01,View cart with items,Customer has two items in cart,Open the cart,Each item name quantity and price are displayed; subtotal is visible,High
+TC-02,US-01,View empty cart,Customer cart is empty,Open the cart,Empty-cart message and continue-browsing option are displayed,Medium
+TC-03,US-02,Increase item quantity,Cart contains an available item,Increase its quantity by one,Quantity and subtotal update correctly,High
+TC-04,US-02,Remove an item,Cart contains at least one item,Select remove for an item,Item is removed and subtotal recalculates,High
+TC-05,US-03,Submit delivery form with missing required field,Checkout form is open,Leave phone number blank and submit,Form blocks progress and displays a validation message,High
+TC-06,US-03,Submit valid delivery details,Checkout form is open,Enter valid name phone and address then continue,Details are accepted and can be reviewed,High
+TC-07,US-04,Review final payable amount,Cart contains items and delivery fee applies,Open order review,Subtotal delivery fee and final amount are displayed separately,High
+TC-08,US-05,Complete payment successfully,Valid cart and delivery details; payment test service returns success,Select a payment method and complete payment,Payment succeeds and order confirmation is displayed,High
+TC-09,US-05,Payment is declined,Valid cart and delivery details; payment test service returns failure,Attempt payment,Failure message is shown and no confirmed order is created,High
+TC-10,US-05,Retry after failed payment,Previous payment attempt failed,Choose an available method and retry,New payment attempt can be started,Medium
+TC-11,US-06,View successful order confirmation,Payment has succeeded,Open confirmation page,Order reference and order summary are displayed,High
+TC-12,US-07,View existing order status,Customer has a valid order reference,Open the order status page,Latest available order status is displayed,Medium
+TC-13,US-07,Search for unknown order,Customer has an invalid order reference,Open the order status page using that reference,Helpful order-not-found message is displayed,Medium
