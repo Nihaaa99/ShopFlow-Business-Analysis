@@ -1,0 +1,10 @@
+requirement_id,story_id,test_case_ids,coverage_notes
+BR-01,US-01,TC-01;TC-02,Cart contents and empty-cart state
+BR-02,US-02,TC-03;TC-04,Quantity changes and item removal
+BR-03,US-03,TC-05;TC-06,Required delivery details and validation
+BR-04,US-04,TC-07,Subtotal delivery fee and final amount
+BR-05,US-05,TC-08;TC-09;TC-10,Available payment method and payment outcomes
+BR-06,US-05,TC-08;TC-09,Order creation only after successful payment
+BR-07,US-06,TC-11,Confirmation and order reference
+BR-08,US-07,TC-12;TC-13,Known and unknown order references
+BR-09,US-05,TC-09;TC-10,Failure message and retry path
